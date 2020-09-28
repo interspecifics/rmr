@@ -1,6 +1,6 @@
-import * as THREE from '/build/three.module.js';
-import Stats from '/assets/libs/stats.module.js';
-import { TTFLoader } from '/assets/js/plugins/TTFLoader.js';
+import * as THREE from '/rmr/build/three.module.js';
+import Stats from '/rmr/assets/libs/stats.module.js';
+import { TTFLoader } from '/rmr/assets/js/plugins/TTFLoader.js';
 
 var container, stats;
 var camera, scene, renderer;

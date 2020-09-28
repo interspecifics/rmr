@@ -1,6 +1,6 @@
-import * as THREE from '/build/three.module.js';
-import Stats from '/assets/libs/stats.module.js';
-import { OrbitControls } from '/assets/controls/OrbitControls.js';
+import * as THREE from '/rmr/build/three.module.js';
+import Stats from '/rmr/assets/libs/stats.module.js';
+import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
 
 
   var group;
