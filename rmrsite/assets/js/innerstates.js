@@ -20,7 +20,7 @@ animate();
 
 function init() {
   // container
-  container = document.getElementById( 'container1' );
+  container = document.getElementById( 'container 1' );
 
   // scene
   scene = new THREE.Scene();

@@ -1,10 +1,10 @@
-import * as THREE from '/rmr/build/three.module.js';
+import * as THREE from './build/three.module.js';
 import Stats from '/rmr/assets/libs/stats.module.js';
 import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
 
 
-  var group;
   var container, stats;
+  var group;
   var particlesData = [];
   var camera, scene, renderer;
   var positions, colors;
@@ -12,6 +12,10 @@ import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
   var pointCloud;
   var particlePositions;
   var linesMesh;
+  var targetRotation = 0;
+  var targetRotationOnMouseDown = 0;
+  var mouseX = 0;
+  var mouseXOnMouseDown = 0;
 
   var maxParticleCount = 800;
   var particleCount = 500;
@@ -31,10 +35,9 @@ import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
   animate();
 
   function init() {
-
     //initGUI();
 
-    container = document.getElementById( 'container' );
+    container = document.getElementById( 'container 2' );
 
     camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 5000 );
     camera.position.z = 2000;
