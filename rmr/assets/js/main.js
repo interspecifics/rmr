@@ -91,20 +91,6 @@ jQuery(document).ready(function($) {
 
 // audio player
 
-      var wavesurfer = WaveSurfer.create({
-      container: '#waveform',
-      waveColor: '#32c6cc',
-      progressColor: '#ffffff'
-    });
-
-    wavesurfer.on('ready', function () {
-      wavesurfer.play();
-      });
-
-
-    wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
-    //
-
       var testimonials = $(".testimonials");
       testimonials.owlCarousel({
         loop:true,

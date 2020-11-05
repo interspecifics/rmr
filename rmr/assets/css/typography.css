@@ -139,8 +139,8 @@ h4{
 }
 
 body {
-    font-size: 16px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 20px;
     color: #98adc2;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
@@ -1464,7 +1464,7 @@ input:-webkit-autofill:hover {
 .section-padding {
     padding: 120px 0;
     overflow: hidden;
-    
+
 }
 
 .padding-top {
@@ -2425,12 +2425,12 @@ input:-webkit-autofill:hover {
 }
 
 .border_black_1px{
-    border: 1px solid #222; 
+    border: 1px solid #222;
 }
 .border_black_2px{
-    border: 2px solid #222; 
+    border: 2px solid #222;
 }.border_black_3px{
-    border: 3px solid #222; 
+    border: 3px solid #222;
 }
 
 @media only screen and (max-width: 767px) {

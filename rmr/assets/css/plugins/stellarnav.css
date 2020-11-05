@@ -63,7 +63,7 @@
     transition: all .3s;
 
 }
-.stellarnav > ul > li:hover:after, 
+.stellarnav > ul > li:hover:after,
 .stellarnav > ul > li.current:after{
     width: 100%;
     visibility: visible;
@@ -117,7 +117,7 @@
 }
 
 
-.stellarnav.light.mobile.active > ul, 
+.stellarnav.light.mobile.active > ul,
 .stellarnav.light.mobile.active  ul > ul {
     background: #2E3D44;
 }
@@ -141,22 +141,6 @@
     color: #08D665;
 }
 
-/* dark theme */
-.stellarnav.dark {
-    background: rgba(0, 0, 0, 1);
-}
-
-.stellarnav.dark a {
-    color: #FFF;
-}
-
-.stellarnav.dark ul ul {
-    background: rgba(0, 0, 0, 1);
-}
-
-.stellarnav.dark li a {
-    color: #FFF;
-}
 
 /* sticky nav */
 .stellarnav.fixed {
@@ -348,11 +332,11 @@ body.stellarnav-noscroll-x {
 }
 
 .stellarnav.dark .icon-close:before {
-    border-color: #FFF;
+    border-color: #000;
 }
 
 .stellarnav.dark .icon-close:after {
-    border-color: #FFF;
+    border-color: #000;
 }
 
 /* mobile nav */
