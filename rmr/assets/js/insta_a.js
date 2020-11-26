@@ -368,7 +368,7 @@ animate();
 // ----------------------------------------------------FUCNTIONS
 function init() {
   // container id
-  container = document.getElementById( 'container 1' );
+  container = document.getElementById( 'container 1a' );
   // scene
   scene = new THREE.Scene();
   scene.background = new THREE.Color( 0x000000 );
@@ -557,18 +557,21 @@ function onWindowResize() {
 //
 function onPointerDown( event ) {
   if ( event.isPrimary === false ) return;
-  if (boxcount<1) boxcount++;
-  else boxcount=0;
+  //if (boxcount<1) boxcount++;
+  //else boxcount=0;
   //console.log("boxcount:", boxcount)
-  updateScene();
+  //updateScene();
   //mouseXOnMouseDown = event.clientX - windowHalfX;
 }
 
 function fakeclic(){
-  if (boxcount<1) boxcount++;
-  else boxcount=0;
+  //if (boxcount<1) boxcount++;
+  //else boxcount=0;
   //console.log("boxcount:", boxcount)
-  updateScene();
+  if (global_key!=past_key){
+    updateScene();
+    //past_key = global_key;
+  }
 }
 //
 function animate() {

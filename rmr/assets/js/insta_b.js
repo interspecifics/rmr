@@ -368,7 +368,7 @@ animate();
 // ----------------------------------------------------FUCNTIONS
 function init() {
   // container id
-  container = document.getElementById( 'container 1' );
+  container = document.getElementById( 'container 1b' );
   // scene
   scene = new THREE.Scene();
   scene.background = new THREE.Color( 0x000000 );
@@ -452,6 +452,7 @@ function updateScene(){
   // clear
   while (group.children.length){
     group.remove(group.children[0]);
+    //group.children[0].dispose();
   }
   // set box frame
   addBoxShape( boxShape,  0xFFFFFF, (o_x-200), (-100), 0, 0, 0, 0, 1 );
@@ -459,7 +460,7 @@ function updateScene(){
 
 
   // then the objects per scene
-  if (boxcount==0){               // ---- ---- ---- ---- ---- 1A
+  if (boxcount==1){               // ---- ---- ---- ---- ---- 1A
     // redraw
     draw_1A();
     // shapes
@@ -489,7 +490,7 @@ function updateScene(){
       aay = o_y+aar*Math.sin(ia * Math.PI * 2/9 - Math.PI/2);
       createTextAA(amps_msd[ia][1], aax, aay, 0);
     }
-  } else if (boxcount==1){        // ---- ---- ---- ---- ---- 1B
+  } else if (boxcount==0){        // ---- ---- ---- ---- ---- 1B
     for (var i=0; i<5; i++){
       addLineShape( hDiShape, 0xFFFFFF, o_x-100, 180-50*i, 0, 0, 0, 0, 1 );
       addLineShape( hDiShape, 0xFFFFFF, o_x-100, 150-50*i, 0, 0, 0, 0, 1 );  
@@ -530,10 +531,10 @@ function updateScene(){
   createTextAA(list_metadata[global_key][1], o_x+30 , o_y-180, 10);
   createTextA("Collection: ", o_x-145 , o_y-195, 10);
   createTextAA(list_metadata[global_key][2], o_x+30 , o_y-195, 10);
-  createTextA("Length: ", o_x-145 , o_y-210, 10);
-  createTextAA(list_metadata[global_key][5]['sample_count']+' samples', o_x+30 , o_y-210, 10);
-  createTextA("Max Vol: ", o_x-145 , o_y-225, 10);
-  createTextAA(list_metadata[global_key][5]['max_volume']+' db', o_x+30 , o_y-225, 10);
+  createTextA("Duration: ", o_x-145 , o_y-210, 10);
+  createTextAA(list_metadata[global_key][5]['duration']+' seconds', o_x+30 , o_y-210, 10);
+  createTextA("mean rms: ", o_x-145 , o_y-225, 10);
+  createTextAA(list_metadata[global_key][5]['mean_rms'], o_x+30 , o_y-225, 10);
   createTextA("ID: ", o_x-145 , o_y-240, 10);
   createTextAA(list_metadata[global_key][0], o_x+30 , o_y-240, 10);
 
@@ -557,18 +558,21 @@ function onWindowResize() {
 //
 function onPointerDown( event ) {
   if ( event.isPrimary === false ) return;
-  if (boxcount<1) boxcount++;
-  else boxcount=0;
+  //if (boxcount<1) boxcount++;
+  //else boxcount=0;
   //console.log("boxcount:", boxcount)
-  updateScene();
+  //updateScene();
   //mouseXOnMouseDown = event.clientX - windowHalfX;
 }
 
 function fakeclic(){
-  if (boxcount<1) boxcount++;
-  else boxcount=0;
+  //if (boxcount<1) boxcount++;
+  //else boxcount=0;
   //console.log("boxcount:", boxcount)
-  updateScene();
+  if (global_key!=past_key){
+    updateScene();
+    past_key = global_key;
+  }
 }
 //
 function animate() {

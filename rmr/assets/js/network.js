@@ -29,7 +29,7 @@ import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
     minDistance: 150,
     limitConnections: true,
     maxConnections: 12,
-    particleCount: 300
+    particleCount: 200
   };
 
   var elem1, elem2, elem3;
@@ -49,7 +49,7 @@ import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
     // camera stuff
     camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 5000 );
     camera.position.z = 1500;
-    // scene controls 
+    // scene controls
     var controls = new OrbitControls( camera, container );
     controls.minDistance = 500;
     controls.maxDistance = 1500;
@@ -185,19 +185,19 @@ import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
   /*
   function makeTextSprite( message, parameters ){
     if ( parameters === undefined ) parameters = {};
-    //     
-    var fontface = parameters.hasOwnProperty("fontface") ? 
+    //
+    var fontface = parameters.hasOwnProperty("fontface") ?
       parameters["fontface"] : "Arial";
-    var fontsize = parameters.hasOwnProperty("fontsize") ? 
+    var fontsize = parameters.hasOwnProperty("fontsize") ?
       parameters["fontsize"] : 18;
-    var borderThickness = parameters.hasOwnProperty("borderThickness") ? 
+    var borderThickness = parameters.hasOwnProperty("borderThickness") ?
       parameters["borderThickness"] : 4;
     var borderColor = parameters.hasOwnProperty("borderColor") ?
       parameters["borderColor"] : { r:255, g:255, b:255, a:1.0 };
     var backgroundColor = parameters.hasOwnProperty("backgroundColor") ?
       parameters["backgroundColor"] : { r:0, g:0, b:0, a:0.5 };
     //var spriteAlignment = THREE.SpriteAlignment.topLeft;
-  
+
     var canvas = document.createElement('canvas');
     var context = canvas.getContext('2d');
     context.font = "Bold " + fontsize + "px " + fontface;
@@ -217,18 +217,18 @@ import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
     context.fillStyle = "rgba(0, 0, 0, 1.0)";
     context.fillText( message, borderThickness, fontsize + borderThickness);
     // canvas contents will be used for a texture
-    var texture = new THREE.Texture(canvas) 
+    var texture = new THREE.Texture(canvas)
     texture.needsUpdate = true;
     //
-    var spriteMaterial = new THREE.SpriteMaterial( 
+    var spriteMaterial = new THREE.SpriteMaterial(
       { map: texture, color: 0xffffff } );
     var sprite = new THREE.Sprite( spriteMaterial );
     //sprite.scale.set(100,50,1.0);
-    return sprite;	
+    return sprite;
   }
 
 
-  function roundRect(ctx, x, y, w, h, r) 
+  function roundRect(ctx, x, y, w, h, r)
   {
       ctx.beginPath();
       ctx.moveTo(x+r, y);
@@ -242,7 +242,7 @@ import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
       ctx.quadraticCurveTo(x, y, x+r, y);
       ctx.closePath();
       ctx.fill();
-    ctx.stroke();   
+    ctx.stroke();
   }*/
 
 
@@ -271,7 +271,7 @@ import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
       particlePositions[ i * 3 + 1 ] += particleData.velocity.y;
       particlePositions[ i * 3 + 2 ] += particleData.velocity.z;
 
-      // bounce      
+      // bounce
       if ( particlePositions[ i * 3 + 1 ] < - rHalf || particlePositions[ i * 3 + 1 ] > rHalf )
         particleData.velocity.y = - particleData.velocity.y;
       if ( particlePositions[ i * 3 ] < - rHalf || particlePositions[ i * 3 ] > rHalf )
@@ -310,9 +310,9 @@ import { OrbitControls } from '/rmr/assets/controls/OrbitControls.js';
           numConnected ++;
         } // end if
       } // end collition check
-    
+
     // update labels
-    aux_vec = new THREE.Vector3(positions[3*i], positions[3*i + 1], positions[3*i + 2]); 
+    aux_vec = new THREE.Vector3(positions[3*i], positions[3*i + 1], positions[3*i + 2]);
     var p1 = new THREE.Vector3( aux_vec.x, aux_vec.y, aux_vec.z).project( camera );
     const x = (p1.x *  .5 + .5) * canvas.clientWidth;
     const y = (p1.y * -.5 + .5) * canvas.clientHeight;
