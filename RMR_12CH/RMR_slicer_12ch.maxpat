@@ -122,7 +122,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1237.666667342185974, 1538.501070777575478, 360.0, 23.0 ],
-					"text" : "1.275041 -1.391689 0.358765 -1.391689 0.633805"
+					"text" : "0.00354 0.007079 0.00354 -1.833903 0.847664"
 				}
 
 			}
@@ -177,7 +177,7 @@
 					"patching_rect" : [ 1241.666667342185974, 1319.001070777575478, 360.0, 155.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1184.166664481163025, 801.569127863139784, 308.8125, 100.682891888277936 ],
-					"setfilter" : [ 0, 5, 1, 0, 0, 3869.9091796875, 2.502155780792236, 0.738773107528687, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 0, 1, 1, 0, 0, 857.1556396484375, 1.028894305229187, 0.738773107528687, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "filtergraph~[2]"
 				}
 
@@ -193,7 +193,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1380.666667342185974, 1217.001070777575478, 88.25, 36.0 ],
-					"presentation_linecount" : 2,
 					"text" : "cutoff or center freq",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -306,7 +305,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 832.666667342185974, 1546.501070777575478, 360.0, 23.0 ],
-					"text" : "0.389188 -0.776846 0.389188 -1.948477 0.952315"
+					"text" : "0.809143 -1.618287 0.809143 -1.968326 0.969846"
 				}
 
 			}
@@ -361,7 +360,7 @@
 					"patching_rect" : [ 836.666667342185974, 1327.001070777575478, 360.0, 155.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1184.166664481163025, 640.526655001299787, 308.8125, 100.682891888277936 ],
-					"setfilter" : [ 0, 4, 1, 0, 0, 440.188201904296875, 0.398694008588791, 1.283013343811035, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 0, 2, 1, 0, 0, 275.767791748046875, 0.821846783161163, 1.283013343811035, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "filtergraph~[1]"
 				}
 
@@ -377,7 +376,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 975.666667342185974, 1225.001070777575478, 88.25, 36.0 ],
-					"presentation_linecount" : 2,
 					"text" : "cutoff or center freq",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -501,7 +499,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 309.666667342185974, 841.714290721075827, 92.0, 23.0 ],
+					"patching_rect" : [ 339.666667342185974, 840.714290721075827, 92.0, 23.0 ],
 					"text" : "biquad~"
 				}
 
@@ -561,7 +559,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 403.666667342185974, 1552.501070777575478, 360.0, 23.0 ],
-					"text" : "0.000004 0.000008 0.000004 -1.995296 0.995341"
+					"text" : "0.009996 0.019992 0.009996 -0.978387 -0.001019"
 				}
 
 			}
@@ -648,7 +646,7 @@
 					"patching_rect" : [ 407.666667342185974, 1333.001070777575478, 360.0, 155.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1183.166664481163025, 478.000000000000227, 308.8125, 100.682891888277936 ],
-					"setfilter" : [ 0, 1, 1, 0, 0, 47.393936157226562, 0.366183131933212, 1.446013808250427, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 0, 1, 1, 0, 0, 1427.644775390625, 1.941482782363892, 0.100797012448311, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "filtergraph~"
 				}
 
@@ -664,7 +662,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 543.541667342185974, 1232.501070777575478, 88.25, 36.0 ],
-					"presentation_linecount" : 2,
 					"text" : "cutoff or center freq",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -5148,6 +5145,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-28",
+													"int" : 1,
 													"maxclass" : "gswitch",
 													"numinlets" : 3,
 													"numoutlets" : 1,
@@ -5731,6 +5729,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-28",
+													"int" : 1,
 													"maxclass" : "gswitch",
 													"numinlets" : 3,
 													"numoutlets" : 1,
@@ -6314,7 +6313,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-28",
-													"int" : 1,
 													"maxclass" : "gswitch",
 													"numinlets" : 3,
 													"numoutlets" : 1,
@@ -6898,7 +6896,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-28",
-													"int" : 1,
 													"maxclass" : "gswitch",
 													"numinlets" : 3,
 													"numoutlets" : 1,
@@ -11001,6 +10998,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-28",
+													"int" : 1,
 													"maxclass" : "gswitch",
 													"numinlets" : 3,
 													"numoutlets" : 1,
@@ -11584,7 +11582,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-28",
-													"int" : 1,
 													"maxclass" : "gswitch",
 													"numinlets" : 3,
 													"numoutlets" : 1,
@@ -12301,7 +12298,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-28",
-													"int" : 1,
 													"maxclass" : "gswitch",
 													"numinlets" : 3,
 													"numoutlets" : 1,
@@ -34304,7 +34300,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-416",
-					"items" : [ "UltraLite mk3 Hybrid MIDI Port", ",", "UltraLite mk3 Hybrid Sync Port", ",", "H9 Pedal", ",", "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "Launch Control XL", ",", "Launch Control XL HUI", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "UltraLite mk3 Hybrid MIDI Port", ",", "UltraLite mk3 Hybrid Sync Port", ",", "H9 Pedal", ",", "Launchpad X LPX DAW Out", ",", "Launchpad X LPX MIDI Out", ",", "Launch Control XL", ",", "Launch Control XL HUI", ",", "to Max 1", ",", "to Max 2", ",", "Elektron Digitakt", ",", "Elektron Syntakt" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -34320,7 +34316,7 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-417",
-					"items" : [ "AU DLS Synth 1", ",", "UltraLite mk3 Hybrid MIDI Port", ",", "H9 Pedal", ",", "Launchpad X LPX DAW In", ",", "Launchpad X LPX MIDI In", ",", "Launch Control XL", ",", "Launch Control XL HUI", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "UltraLite mk3 Hybrid MIDI Port", ",", "H9 Pedal", ",", "Launchpad X LPX DAW In", ",", "Launchpad X LPX MIDI In", ",", "Launch Control XL", ",", "Launch Control XL HUI", ",", "from Max 1", ",", "from Max 2", ",", "Elektron Digitakt", ",", "Elektron Syntakt" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -35115,14 +35111,14 @@
 					"autopopulate" : 1,
 					"color" : [ 0.309803921568627, 0.996078431372549, 0.0, 1.0 ],
 					"id" : "obj-330",
-					"items" : [ "M_1b_exp_0-item.wav", ",", "M_1b_exp_1-item.wav", ",", "M_1b_exp_2-item.wav", ",", "M_1b_exp_6-item.wav", ",", "M_1b_house_1-item.wav", ",", "M_1b_house_4-item.wav", ",", "M_1b_latin_01-item.wav", ",", "M_1b_movie2_0-item.wav", ",", "M_1b_movie2_1-item.wav", ",", "M_1b_movie2_5-item.wav", ",", "M_1b_movie2_7-item.wav", ",", "M_1b_movie_0-item.wav", ",", "M_1b_movie_1-item.wav", ",", "M_1b_movie_6-item.wav", ",", "M_1b_movie_8-item.wav", ",", "M_1b_soul3_01-item.wav", ",", "M_1b_soul3_05-item.wav", ",", "M_1b_soul_2-item.wav", ",", "M_1b_soul_3-item.wav", ",", "M_1b_soul_4-item.wav", ",", "M_1b_soundtrack_4-item.wav", ",", "M_1b_vs_BE_4-item.wav", ",", "mp3" ],
+					"items" : [ "lv2_D_ 1-item_6.wav", ",", "lv2_D_ 2-item_5.wav", ",", "lv2_D_ 3-item_4.wav", ",", "lv2_D_ 4-item_0.wav", ",", "mp3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1656.666667342185974, 284.492312699097852, 100.0, 22.0 ],
-					"prefix" : "/Volumes/Miracles/2022/01_Proyectos/RMR/07_long/Long Sessions 0Y/",
+					"prefix" : "/Volumes/Miracles/2022/01_Proyectos/RMR/20_lv2/Level 2 Loop D/",
 					"presentation" : 1,
 					"presentation_rect" : [ 1007.33332896232605, 54.0, 100.0, 22.0 ],
 					"textcolor" : [ 0.309803921568627, 0.996078431372549, 0.0, 1.0 ]
@@ -35205,14 +35201,14 @@
 					"autopopulate" : 1,
 					"color" : [ 0.309803921568627, 0.996078431372549, 0.0, 1.0 ],
 					"id" : "obj-324",
-					"items" : [ "M_1b_vs_BE 1-item_0.wav", ",", "M_1b_vs_BE 1-item_0.wav.asd", ",", "M_1b_vs_BE 2-item_1.wav", ",", "M_1b_vs_BE 2-item_1.wav.asd", ",", "M_1b_vs_BE 3-item_2.wav", ",", "M_1b_vs_BE 3-item_2.wav.asd", ",", "M_1b_vs_BE 4-item_3.wav", ",", "M_1b_vs_BE 4-item_3.wav.asd", ",", "M_1b_vs_BE 6-item_5.wav", ",", "M_1b_vs_BE 6-item_5.wav.asd", ",", "M_1b_vs_BE 7-item_6.wav", ",", "M_1b_vs_BE 7-item_6.wav.asd", ",", "M_1b_vs_BE 8-item_7.wav", ",", "M_1b_vs_BE 8-item_7.wav.asd", ",", "mp3" ],
+					"items" : [ "M_1b_exp_0-item.wav", ",", "M_1b_exp_1-item.wav", ",", "M_1b_exp_2-item.wav", ",", "M_1b_exp_6-item.wav", ",", "M_1b_house_1-item.wav", ",", "M_1b_house_4-item.wav", ",", "M_1b_latin_01-item.wav", ",", "M_1b_movie2_0-item.wav", ",", "M_1b_movie2_1-item.wav", ",", "M_1b_movie2_5-item.wav", ",", "M_1b_movie2_7-item.wav", ",", "M_1b_movie_0-item.wav", ",", "M_1b_movie_1-item.wav", ",", "M_1b_movie_6-item.wav", ",", "M_1b_movie_8-item.wav", ",", "M_1b_soul3_01-item.wav", ",", "M_1b_soul3_05-item.wav", ",", "M_1b_soul_2-item.wav", ",", "M_1b_soul_3-item.wav", ",", "M_1b_soul_4-item.wav", ",", "M_1b_soundtrack_4-item.wav", ",", "M_1b_vs_BE_4-item.wav", ",", "mp3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 374.666667342185974, 284.027782784567933, 100.0, 22.0 ],
-					"prefix" : "/Volumes/Miracles/2022/01_Proyectos/RMR/02_vs/RMR vs Billie Eillish/",
+					"prefix" : "/Volumes/Miracles/2022/01_Proyectos/RMR/07_long/Long Sessions 0Y/",
 					"presentation" : 1,
 					"presentation_rect" : [ 248.166664481163025, 54.0, 100.0, 22.0 ],
 					"textcolor" : [ 0.309803921568627, 0.996078431372549, 0.0, 1.0 ]
@@ -35295,14 +35291,14 @@
 					"autopopulate" : 1,
 					"color" : [ 0.309803921568627, 0.996078431372549, 0.0, 1.0 ],
 					"id" : "obj-308",
-					"items" : [ "mp3", ",", "sp04_vS_Rabit_1.wav", ",", "sp04_vS_Rabit_1.wav.asd", ",", "sp04_vS_Rabit_2.wav", ",", "sp04_vS_Rabit_2.wav.asd", ",", "sp04_vS_Rabit_4.wav", ",", "sp04_vS_Rabit_4.wav.asd", ",", "sp04_vS_Rabit_6.wav", ",", "sp04_vS_Rabit_6.wav.asd", ",", "sp04_vS_Rabit_7.wav", ",", "sp04_vS_Rabit_7.wav.asd" ],
+					"items" : [ "M_1b_exp_0-item.wav", ",", "M_1b_exp_1-item.wav", ",", "M_1b_exp_2-item.wav", ",", "M_1b_exp_6-item.wav", ",", "M_1b_house_1-item.wav", ",", "M_1b_house_4-item.wav", ",", "M_1b_latin_01-item.wav", ",", "M_1b_movie2_0-item.wav", ",", "M_1b_movie2_1-item.wav", ",", "M_1b_movie2_5-item.wav", ",", "M_1b_movie2_7-item.wav", ",", "M_1b_movie_0-item.wav", ",", "M_1b_movie_1-item.wav", ",", "M_1b_movie_6-item.wav", ",", "M_1b_movie_8-item.wav", ",", "M_1b_soul3_01-item.wav", ",", "M_1b_soul3_05-item.wav", ",", "M_1b_soul_2-item.wav", ",", "M_1b_soul_3-item.wav", ",", "M_1b_soul_4-item.wav", ",", "M_1b_soundtrack_4-item.wav", ",", "M_1b_vs_BE_4-item.wav", ",", "mp3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1014.666667342185974, 284.492312699097852, 100.0, 22.0 ],
-					"prefix" : "/Volumes/Miracles/2022/01_Proyectos/RMR/11_samplepack_A/RMR vs Rabbit/",
+					"prefix" : "/Volumes/Miracles/2022/01_Proyectos/RMR/07_long/Long Sessions 0Y/",
 					"presentation" : 1,
 					"presentation_rect" : [ 626.166664481163025, 54.0, 100.0, 22.0 ],
 					"textcolor" : [ 0.309803921568627, 0.996078431372549, 0.0, 1.0 ]
@@ -37719,7 +37715,7 @@
 					"patching_rect" : [ 1087.666667342185974, 1018.454420277670465, 101.0, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1186.166664481163025, 358.000000000000057, 82.0, 23.0 ],
-					"text" : "5 5 1"
+					"text" : "5 3 1"
 				}
 
 			}
@@ -38358,7 +38354,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 273.5, 43.0, 29.5, 22.0 ],
 									"style" : "default",
-									"text" : "3"
+									"text" : "5"
 								}
 
 							}
@@ -40368,7 +40364,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 273.5, 43.0, 29.5, 22.0 ],
 									"style" : "default",
-									"text" : "3"
+									"text" : "7"
 								}
 
 							}
@@ -40652,7 +40648,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 24.0, 106.0, 46.5, 22.0 ],
 									"style" : "default",
-									"text" : "3"
+									"text" : "6"
 								}
 
 							}
@@ -42386,7 +42382,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 273.5, 43.0, 29.5, 22.0 ],
 									"style" : "default",
-									"text" : "1"
+									"text" : "2"
 								}
 
 							}
@@ -42644,7 +42640,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 119.0, 233.0, 60.0, 22.0 ],
 									"style" : "default",
-									"text" : "1"
+									"text" : "-1"
 								}
 
 							}
@@ -42670,7 +42666,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 24.0, 106.0, 46.5, 22.0 ],
 									"style" : "default",
-									"text" : "4"
+									"text" : "6"
 								}
 
 							}
@@ -44279,7 +44275,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-453", 0 ],
-					"midpoints" : [ 289.166667342185974, 855.0, 306.0, 855.0, 306.0, 837.0, 319.166667342185974, 837.0 ],
+					"midpoints" : [ 289.166667342185974, 855.0, 306.0, 855.0, 306.0, 837.0, 349.166667342185974, 837.0 ],
 					"source" : [ "obj-13", 1 ]
 				}
 
@@ -46667,7 +46663,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-453", 0 ],
-					"midpoints" : [ 417.166667342185974, 1491.0, 390.0, 1491.0, 390.0, 876.0, 306.0, 876.0, 306.0, 837.0, 319.166667342185974, 837.0 ],
+					"midpoints" : [ 417.166667342185974, 1491.0, 390.0, 1491.0, 390.0, 876.0, 306.0, 876.0, 306.0, 837.0, 349.166667342185974, 837.0 ],
 					"order" : 1,
 					"source" : [ "obj-446", 0 ]
 				}
@@ -46700,7 +46696,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"midpoints" : [ 319.166667342185974, 867.0, 228.0, 867.0, 228.0, 873.0, 225.166667342185974, 873.0 ],
+					"midpoints" : [ 349.166667342185974, 867.0, 228.0, 867.0, 228.0, 873.0, 225.166667342185974, 873.0 ],
 					"source" : [ "obj-453", 0 ]
 				}
 
